@@ -83,24 +83,17 @@ public class ProductController {
 
         Buah buah = new Buah(id,nama,harga,stok,berat,);
 
-        String st = InputUtil.readString("Nyalakan perangkat sekarang? (y/n): ");
-        if (st.equalsIgnoreCase("y")) {
-            speaker.turnOn();
-        } else {
-            speaker.turnOf();
-        }
-
-        listDevice.add(speaker);
-        view.showMessage("Smart Speaker berhasil ditambahkan!");
+        listProducts.add(buah);
+        view.showMessage("Buah erhasil ditambahkan!");
     }
 
     private void tambahFrozenFood() {
         String id = InputUtil.readString("Masukkan ID: ");
         String nama = InputUtil.readString("Masukkan Nama: ");
-        double daya = InputUtil.readDouble("Masukkan Daya (W): ");
-        String pin = InputUtil.readString("Masukkan PIN asli: ");
+        double harga = InputUtil.readDouble("Masukkan Harga: ");
+        int stok = InputUtil.readInt("Masukkan stok: ");
 
-        SmartDoorLock lock = new SmartDoorLock(id, nama, daya, pin);
+        FrozenFood froz = new FrozenFood(id, nama, harga, stok);
 
         String st = InputUtil.readString("Kunci pintu sekarang? (y/n): ");
         if (st.equalsIgnoreCase("y")) {

@@ -27,7 +27,7 @@ public class ProductView {
         }
 
         for (Product produk : products) {
-            System.out.println("• " + products.get);
+            System.out.println("• " + product);
         }
     }
 

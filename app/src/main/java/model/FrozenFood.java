@@ -3,14 +3,12 @@ package model;
 import java.time.LocalDate;
 
 public class FrozenFood extends Product implements Discountable, Expireable{
-    private String jenis;
-    private double berat;
+    private double suhuPenyimpanan;
     private String tanggalKadaluarsa;
 
-    public FrozenFood (String id,String nama,double harga,int stok,String jenis,double berat,String tanggalKadaluarsa){
+    public FrozenFood (String id,String nama,double harga,int stok,double suhuPenyimpanan,String tanggalKadaluarsa){
         super(id,nama,harga,stok);
-        this.jenis = jenis;
-        this.berat = berat;
+        this.suhuPenyimpanan = suhuPenyimpanan;
         this.tanggalKadaluarsa = tanggalKadaluarsa;
     }
 }
