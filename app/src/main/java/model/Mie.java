@@ -21,7 +21,7 @@ public class Mie extends Product implements Discountable {
         if (amount >= 20) {
             return getHarga() * amount * 0.10;
         } else if (amount >= 10) {
-            return getHarga() * amount * 0.05;
+            return getHarga() * amount * 0.04;
         }
         return 0.0;
     }

@@ -32,7 +32,7 @@ public class FrozenFood extends Product implements Discountable, Expireable {
     @Override
     public double calculateDiscount(int amount) {
         if (amount >= 8) {
-            return getHarga() * amount * 0.08;
+            return getHarga() * amount * 0.008;
         } else if (amount >= 4) {
             return getHarga() * amount * 0.04;
         }
