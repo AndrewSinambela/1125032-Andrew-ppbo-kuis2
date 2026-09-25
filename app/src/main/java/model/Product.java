@@ -17,7 +17,6 @@ public abstract class Product {
         return id;
     }
 
-
     public void setId(String id) {
         this.id = id;
     }
@@ -25,29 +24,26 @@ public abstract class Product {
     public String getNama() {
         return nama;
     }
-
+            
     public void setNama(String nama) {
         this.nama = nama;
     }
-
+        
     public double getHarga() {
         return harga;
     }
-
+            
     public void setHarga(double harga) {
         this.harga = harga;
     }
-
+            
     public int getStok() {
         return stok;
     }
-
+    
     public void setStok(int stok) {
         this.stok = stok;
     }
-
-    public abstract String getProductDetails();
-
+    public abstract String getProductDetail();    
     public abstract double calculateSubTotal(int amount);
-
 }
