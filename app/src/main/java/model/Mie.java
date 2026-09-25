@@ -10,11 +10,19 @@ public class Mie extends Product implements Discountable {
         this.berat = berat;
     }
 
-    public String getRasa() { return rasa; }
-    public void setRasa(String rasa) { this.rasa = rasa; }
+    public String getRasa() {
+         return rasa; 
+        }
+    public void setRasa(String rasa) { 
+        this.rasa = rasa; 
+    }
 
-    public double getBerat() { return berat; }
-    public void setBerat(double berat) { this.berat = berat; }
+    public double getBerat() {
+         return berat; 
+        }
+    public void setBerat(double berat) {
+         this.berat = berat; 
+        }
 
     @Override
     public double calculateDiscount(int amount) {

@@ -12,13 +12,23 @@ public class Buah extends Product implements Discountable, Expireable {
         this.tanggalKadaluarsa = tanggalKadaluarsa;
     }
 
-    public JENIS getJenis() { return jenis; }
-    public void setJenis(JENIS jenis) { this.jenis = jenis; }
+    public JENIS getJenis() {
+         return jenis; 
+    }
+    public void setJenis(JENIS jenis) {
+         this.jenis = jenis; 
+    }
 
-    public double getBerat() { return berat; }
-    public void setBerat(double berat) { this.berat = berat; }
+    public double getBerat() {
+         return berat; 
+    }
+    public void setBerat(double berat) {
+         this.berat = berat; 
+    }
 
-    public String getTanggalKadaluarsa() { return tanggalKadaluarsa; }
+    public String getTanggalKadaluarsa() { 
+        return tanggalKadaluarsa;
+    }
     public void setTanggalKadaluarsa(String tanggalKadaluarsa) { this.tanggalKadaluarsa = tanggalKadaluarsa; }
 
     @Override
